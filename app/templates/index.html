@@ -1,0 +1,24 @@
+{% extends "/base.html" %}
+{% block page_content %}
+<div class="container-fluid">
+    <h1 style="text-align:center">Welcome to EFRC-0!</h1>
+    <div align="center" style="width :85%" class="container-fluid">
+        <img alt="" style="width: 100%;height: 100%" src="/static/status_img/FRC0_real.jpg">
+    </div>
+    <!-- <div align="center" style="width :85%" class="container-fluid">
+        <img alt="" style="margin-top:20px;width: 100%;height: 100%" src="/static/status_img/sunist-photo.jpg">
+    </div> -->
+</div>
+
+{% endblock %}
+
+{% block head %}
+{{super()}}
+    <!--<link  href="/static/css/bootstrap.min.css">-->
+    <title>Welcome to EFRC</title>
+
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+{% endblock %}

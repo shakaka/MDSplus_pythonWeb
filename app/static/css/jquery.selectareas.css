@@ -1,0 +1,12 @@
+.select-areas-overlay {
+	background-color: transparent;
+	overflow: hidden;
+	position: absolute;
+}
+
+
+.select-areas-outline {
+	outline: #000 solid thin;
+	overflow: hidden;
+}
+
