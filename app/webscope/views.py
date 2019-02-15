@@ -83,8 +83,7 @@ def get_list():
 def check_shot_num(shot):
     shot_num = shot
     try:
-        conect = Connection("10.2.70.16")
-        conect.openTree('acq2106_test', shot_num)
+        tree = Tree("acq2106_test", shot_num)
     except:
         return jsonify(check_shot_num=-1)
     else:
