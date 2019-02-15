@@ -223,10 +223,12 @@ def get_img(shot, img_id, rand_time, global_id):
     if request.method == 'GET':
         _img_prop = session['img_list'][img_id]
         hfont = {'fontname': 'serif'}
-        conect = Connection("10.2.70.16")
-        conect.openTree('acq2106_test', shot)
+        # conect = Connection("10.2.70.16")
+        # conect.openTree('acq2106_test', shot)
+        tree = Tree("acq2106_test", shot)
+
         # print (conect.get('$shot'))
-        y = conect.get(_img_prop['y_data_source']).data()
+        y = t.getNode(_img_prop['y_data_source']).record.data()
         # print len(y)
         # t = conect.get(_img_prop['x_data_source']).data()
         t = []
